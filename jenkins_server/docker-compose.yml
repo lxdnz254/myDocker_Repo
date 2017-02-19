@@ -1,6 +1,6 @@
 version: "2"
 services:
-  my-jenkins-setuo:
+  my-jenkins-setup:
     build:
       context: .
       dockerfile: Dockerfile
