@@ -1,9 +1,11 @@
 version: "2"
 services:
-  my-jenkins-setup:
+  my-jenkins-setup_2:
     build:
       context: .
       dockerfile: Dockerfile
     # image: jenkins:latest
     ports:
       - "49001:8080"
+    volumes:
+      - /home/alex/jenkins_server:/var/jenkins_home
